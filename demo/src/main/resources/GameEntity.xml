@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.example.demo.homework.entity.GameEntity">
+        <table name="game" schema="public" catalog="game"/>
+        <attributes>
+            <id name="uuid">
+                <column name="uuid"/>
+            </id>
+            <basic name="player1Id">
+                <column name="player1_id"/>
+            </basic>
+            <basic name="player2Id">
+                <column name="player2_id"/>
+            </basic>
+            <basic name="turnPlayerId">
+                <column name="turn_player_id"/>
+            </basic>
+            <basic name="answer">
+                <column name="answer"/>
+            </basic>
+            <basic name="state">
+                <column name="state"/>
+            </basic>
+            <basic name="rounds">
+                <column name="rounds"/>
+            </basic>
+            <basic name="guessHistoryId">
+                <column name="guess_history_id"/>
+            </basic>
+            <basic name="createDateTime">
+                <column name="create_date_time"/>
+            </basic>
+            <basic name="updateDateTime">
+                <column name="update_date_time"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

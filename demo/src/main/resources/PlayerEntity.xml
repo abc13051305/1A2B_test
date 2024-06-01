@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.example.demo.homework.entity.PlayerEntity">
+        <table name="player" schema="public" catalog="game"/>
+        <attributes>
+            <id name="uuid">
+                <column name="uuid"/>
+            </id>
+            <basic name="name">
+                <column name="name"/>
+            </basic>
+            <basic name="gameId">
+                <column name="game_id"/>
+            </basic>
+            <basic name="createDateTime">
+                <column name="create_date_time"/>
+            </basic>
+            <basic name="updateDateTime">
+                <column name="update_date_time"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
